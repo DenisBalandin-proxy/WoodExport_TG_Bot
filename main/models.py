@@ -64,7 +64,7 @@ class BenefitImages(models.Model):
     fio = models.CharField(max_length=100, verbose_name='ФИО', blank=False)
     benefit = models.CharField(max_length=100)
     image = models.ImageField(blank=False, null=False, upload_to=None)
-    #user = models.ForeignKey(User, related_name='ben_img', on_delete=models.CASCADE)
+    #user = models.ForeignKey(User, related_name='ben_img'+++, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.benefit
