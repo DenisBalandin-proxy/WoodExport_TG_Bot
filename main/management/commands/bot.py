@@ -77,7 +77,7 @@ class Command(BaseCommand):
             user = User.objects.filter(chat_id=message.from_user.id).first()
 
             if user:
-                bot.send_message(message.from_user.id, "Вы уже регистрировались")
+                bot.send_message(message.from_user.id, "Вы уже регистрировались.")
                 return
 
             bot.send_message(message.from_user.id, 'Авторизация в чате WoodExportBot. Введите ваш номер телефона в формате 89009009090')
