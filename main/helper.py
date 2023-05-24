@@ -20,7 +20,7 @@ def user_saved_signal_approved(chat_id):
 
 def user_saved_signal_refused(chat_id):
     CheckingAvailability.mailing(chat_id,
-                                 "У нас+++ не получилось убедиться в том, что вы наш сотрудник. Обратитесь в отдел управления персоналом.")
+                                 "У нас+ не получилось убедиться в том, что вы наш сотрудник. Обратитесь в отдел управления персоналом.")
 
 def calculate_work_experience(chat_id):
     CheckingAvailability.work_experience(chat_id)
